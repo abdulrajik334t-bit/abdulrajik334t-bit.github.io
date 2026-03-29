@@ -1,50 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body {font-family: Arial; background:#f4f4f4;}
-        header {background:#222; color:white; text-align:center; padding:20px;}
-        section {background:white; margin:10px; padding:20px; border-radius:10px;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Rajik Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    background: #0f172a;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 28%;
+    background: #020617;
+    padding: 30px;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    color: #94a3b8;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 5px;
+}
+
+.sidebar .item {
+    margin: 10px 0;
+}
+
+/* Main */
+.main {
+    width: 72%;
+    padding: 40px;
+}
+
+/* Header */
+.header h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #38bdf8, #6366f1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.header p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+.section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.02);
+    background: #334155;
+}
+
+.section h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    body {
+        flex-direction: column;
+    }
+    .sidebar, .main {
+        width: 100%;
+    }
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>Abdul Rajik</h1>
-    <p>Pharmacy Student | Future Healthcare Professional</p>
-</header>
+<!-- Sidebar -->
+<div class="sidebar">
+    <img src="https://via.placeholder.com/120" alt="Profile">
+    <h2>Abdul Rajik</h2>
+    <p>Pharmacy Student</p>
 
-<section>
-    <h2>About Me</h2>
-    <p>I am a pharmacy student interested in healthcare and research.</p>
-</section>
+    <h3>Contact</h3>
+    <div class="item">📞 +91-7999754531</div>
+    <div class="item">📧 abdulrajik334t@email.com</div>
 
-<section>
-    <h2>Education</h2>
-    <p>Bachelor of Pharmacy (B.Pharm)</p>
-</section>
+    <h3>Skills</h3>
+    <div class="item">✔ Laboratory Techniques</div>
+    <div class="item">✔ Chromatography</div>
+    <div class="item">✔ Communication</div>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Laboratory Techniques</li>
-        <li>Chromatography</li>
-        <li>Communication Skills</li>
-    </ul>
-</section>
+    <h3>Languages</h3>
+    <div class="item">English</div>
+    <div class="item">Hindi</div>
+</div>
 
-<section>
-    <h2>Projects</h2>
-    <p>Paper Chromatography</p>
-    <p>Glucose Determination</p>
-</section>
+<!-- Main -->
+<div class="main">
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-</section>
+    <div class="header">
+        <h1>Abdul Rajik</h1>
+        <p>Future Healthcare Professional</p>
+        <a href="#" class="btn">Download Resume</a>
+    </div>
+
+    <div class="section">
+        <h2>Profile</h2>
+        <p>
+        Passionate pharmacy student focused on healthcare innovation,
+        research, and professional growth.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p>Bachelor of Pharmacy (B.Pharm)</p>
+        <p>Your College Name</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <p>• Paper Chromatography of Amino Acids</p>
+        <p>• Glucose Determination by Colorimetry</p>
+    </div>
+
+    <div class="section">
+        <h2>Certificates</h2>
+        <p>• Add your certificates here</p>
+    </div>
+
+</div>
 
 </body>
 </html>
